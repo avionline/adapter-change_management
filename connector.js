@@ -203,7 +203,7 @@ class ServiceNowConnector {
   get(callback) {
     let getCallOptions = { ...this.options };
     getCallOptions.method = 'GET';
-    getCallOptions.query = 'sysparm_limit=2';
+    getCallOptions.query = 'sysparm_limit=5';
     this.sendRequest(getCallOptions, (results, error) => callback(results, error));
   }
 
